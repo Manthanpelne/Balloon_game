@@ -1,0 +1,124 @@
+
+      .container {
+        position: relative;
+        display: inline-block;
+        height: 500px;
+        width: 100%;
+      }
+      .home_img {
+        width: 100%;
+      }
+
+      .overlay1 {
+        top: 0;
+        left: 40px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        animation: burst 2s forwards;
+        animation: move 8s linear infinite;
+      }
+
+      .overlay2 {
+        position: absolute;
+        top: 170px;
+        left: 400px;
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        animation: burst 3s forwards;
+        animation: move 14s linear infinite;
+      }
+      .overlay7 {
+        position: absolute;
+        top: 390px;
+        left: 1010px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        animation: burst 3s forwards;
+        animation: move 22s linear infinite;
+      }
+
+      .overlay3 {
+        position: absolute;
+        top: 510px;
+        left: 730px;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        animation: burst 3s forwards;
+        animation: move 30s linear infinite;
+      }
+
+      #overlay4 {
+        position: absolute;
+        top: 450px;
+        left: 230px;
+        width: 70px;
+        height: 70px;
+      }
+
+      .overlay5 {
+        position: absolute;
+        top: 489px;
+        left: 204px;
+        width: 130px;
+        height: 130px;
+      }
+
+      .overlay6 {
+        position: absolute;
+        top: 500px;
+        left: 290px;
+        width: 90px;
+        height: 90px;
+      }
+
+      .ball {
+        width: 50px;
+        margin-top: 450px;
+        height: 50px;
+        background-color: rgb(250, 241, 207);
+        border-radius: 50%;
+        position: relative;
+        animation: bounce 1s infinite;
+      }
+
+      @keyframes bounce {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: 20px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+
+      @keyframes move {
+        0% {
+          left: 22%;
+          top: 80%;
+          opacity: 1;
+        }
+        100% {
+          left: 100%;
+          top: 0;
+          opacity: 0;
+        }
+      }
+
+      @keyframes burst {
+        0% {
+          transform: scale(1);
+        }
+        70% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
